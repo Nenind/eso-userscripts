@@ -4,7 +4,7 @@
 // @version     0.1.1
 // @author      tttooottt
 // @description Usercript for https://github.com/questionableprofile/esnotifier support
-// @include     *://www.esonline.cf/
+// @include     *://*.esonline.tk/
 // @connect     localhost
 // @grant       GM_xmlhttpRequest
 // @updateURL   https://github.com/tttooottt/eso-userscripts/raw/master/notifier/notifier.user.js
