@@ -28,6 +28,10 @@ var currentNode;
 
 function sendData(details) {
     const actorId = details.id || details.sender || details.author; 
+    const actorName = RC.users.find(user => user.id == actorId).name;
+
+    if (actorName.match('\u2063'))
+        return;
 
     const _data = {
         "code": details.reason,
@@ -38,7 +42,7 @@ function sendData(details) {
             "eventData": details,
             "actor": {
                 "id": actorId,
-                "name": RC.users.find(user => user.id == actorId).name
+                "name": actorName
             }
         }
     }
