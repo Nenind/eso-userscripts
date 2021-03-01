@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ESO Notifier
 // @namespace   tttooottt
-// @version     0.1.1
+// @version     0.1.2
 // @author      tttooottt
 // @description Usercript for https://github.com/questionableprofile/esnotifier support
 // @include     *://*.esonline.tk/
