@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name        ESO Notifier
 // @namespace   tttooottt
-// @version     0.1.2
+// @version     0.1.3
 // @author      tttooottt
 // @description Usercript for https://github.com/questionableprofile/esnotifier support
 // @include     *://*.esonline.tk/
 // @connect     localhost
 // @grant       GM_xmlhttpRequest
-// @updateURL   https://github.com/tttooottt/eso-userscripts/raw/master/notifier/notifier.user.js
-// @downloadURL https://github.com/tttooottt/eso-userscripts/raw/master/notifier/notifier.user.js
+// @updateURL   https://github.com/questionableprofile/eso-userscripts/raw/master/notifier/notifier.user.js
+// @downloadURL https://github.com/questionableprofile/eso-userscripts/raw/master/notifier/notifier.user.js
 // @license     MIT
 // @require     https://github.com/tttooottt/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
 // ==/UserScript==
@@ -16,7 +16,7 @@
 const ServerPort = 9673;
 
 const MessageEvents = [
-    'chat', 'tryMessage', 'userRoll', 'diceResult', 'youtubePlaying'
+    'chat', 'tryMessage', 'userRoll', 'diceResult', 'youtubePlaying', 'esoDisconnected'
 ];
 
 const ConnectEvent = 'serverTimecode';
