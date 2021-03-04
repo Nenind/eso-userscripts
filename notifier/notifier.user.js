@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ESO Notifier
 // @namespace   tttooottt
-// @version     0.1.3
+// @version     0.1.5
 // @author      tttooottt
 // @description Usercript for https://github.com/questionableprofile/esnotifier support
 // @include     *://*.esonline.tk/
@@ -26,9 +26,13 @@ const RC = new ESORoomChecker;
 
 var currentNode;
 
-function sendData(details) {
-    const actorId = details.id || details.sender || details.author; 
-    const actorName = RC.users.find(user => user.id == actorId).name;
+function sendData(details, type) {
+    const actorId = details.id || details.sender || details.author || -1;
+    const user = RC.users.find(user => user.id == actorId);
+    const actorName = user ? user.name : '';
+
+    if (details.reason == 'youtubePlaying' && details.track.id == '')
+        return;
 
     if (actorName.match('\u2063'))
         return;
@@ -72,7 +76,7 @@ function initMod() {
             mutedPlayer => mutedPlayer.id == event.detail.sender);
         if (isMuted) return;
 
-        sendData(event.detail);
+        sendData(event.detail, event.type);
     }
 
     MessageEvents.map(eventCode => document.addEventListener(eventCode, messagesHandler));
