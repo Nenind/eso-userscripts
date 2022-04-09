@@ -10,13 +10,13 @@
 // @updateURL   https://github.com/questionableprofile/eso-userscripts/raw/master/notifier/notifier.user.js
 // @downloadURL https://github.com/questionableprofile/eso-userscripts/raw/master/notifier/notifier.user.js
 // @license     MIT
-// @require     https://github.com/tttooottt/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
+// @require     https://github.com/questionableprofile/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
 // ==/UserScript==
 
 const ServerPort = 9673;
 
 const MessageEvents = [
-    'chat', 'tryMessage', 'userRoll', 'diceResult', 'youtubePlaying', 'esoDisconnected'
+    'chat', 'tryMessage', 'userRoll', 'diceResult', 'youtubePlaying', 'esoDisconnected', 'serverBroadcast'
 ];
 
 const ConnectEvent = 'serverTimecode';

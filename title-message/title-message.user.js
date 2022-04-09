@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 const MessageEvents = [
-    'chat', 'tryMessage', 'userRoll', 'diceResult'
+    'chat', 'tryMessage', 'userRoll', 'diceResult', 'esoDisconnected', 'serverBroadcast'
 ];
 
 const ConnectEvent = 'serverTimecode';

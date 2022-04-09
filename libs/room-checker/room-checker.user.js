@@ -4,8 +4,8 @@
 // @version     0.1.0
 // @author      tttooottt
 // @description Get current users in room
-// @updateURL   https://github.com/tttooottt/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
-// @downloadURL https://github.com/tttooottt/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
+// @updateURL   https://github.com/questionableprofile/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
+// @downloadURL https://github.com/questionableprofile/eso-userscripts/raw/master/libs/room-checker/room-checker.user.js
 // @license     MIT
 // ==/UserScript==
 
